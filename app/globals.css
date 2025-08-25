@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 16px;
+}
+
+body {
+  @apply bg-white text-gray-900 antialiased;
+}
+
+.container-beauty {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.card {
+  @apply rounded-2xl shadow-soft bg-white;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 font-medium transition;
+}
+
+.btn-primary {
+  @apply bg-leaf-600 text-white hover:bg-leaf-700;
+}
+
+.btn-ghost {
+  @apply bg-white text-gray-900 hover:bg-gray-50;
+}
