@@ -7,7 +7,7 @@ const faqs = [
 
 export default function FAQ() {
   return (
-    <section id="faq" className="container-beauty py-16">
+  <section id="faq" className="container-beauty py-16 scroll-mt-32">
       <h2 className="text-2xl font-semibold mb-6">Câu hỏi thường gặp</h2>
       <div className="grid md:grid-cols-2 gap-6">
         {faqs.map((f, i) => (

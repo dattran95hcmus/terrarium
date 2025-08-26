@@ -1,21 +1,21 @@
 export default function Header() {
   return (
     <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-gray-100">
-      <div className="container-beauty flex items-center justify-between h-16">
-        <a href="#" className="flex items-center gap-2">
-          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden>
-            <path d="M12 2L3 7v10l9 5 9-5V7l-9-5Z" stroke="#3aa656" strokeWidth="1.5"/>
-            <circle cx="12" cy="12" r="3" stroke="#3aa656" strokeWidth="1.5"/>
-          </svg>
-          <span className="font-semibold text-lg">3Bros-Terra</span>
+      <div className="container-beauty flex items-center justify-between h-16 md:h-32">
+        <a href="#" className="flex items-center gap-3">
+          <div className="w-12 h-12 md:w-24 md:h-24 rounded-full bg-white flex items-center justify-center shadow-md border border-gray-200">
+            <img src="/logo.png" alt="Logo" className="w-8 h-8 md:w-24 md:h-24 object-cover" />
+          </div>
+          <span className="font-extrabold font-sans text-xl md:text-4xl tracking-tight">3Bros-Terra</span>
         </a>
-        <nav className="hidden md:flex items-center gap-6 text-sm">
-          <a href="#models" className="hover:text-leaf-700">Mẫu</a>
-          <a href="#benefits" className="hover:text-leaf-700">Lợi ích</a>
-          <a href="#reviews" className="hover:text-leaf-700">Đánh giá</a>
-          <a href="#faq" className="hover:text-leaf-700">FAQ</a>
+        <nav className="hidden md:flex items-center gap-8 text-base md:text-2xl font-semibold font-sans">
+          <a href="#models" className="hover:text-leaf-700 transition">Mẫu</a>
+          <a href="#benefits" className="hover:text-leaf-700 transition">Lợi ích</a>
+          <a href="#about-us" className="hover:text-leaf-700 transition">Về chúng tôi</a>
+          <a href="#reviews" className="hover:text-leaf-700 transition">Đánh giá</a>
+          <a href="#faq" className="hover:text-leaf-700 transition">FAQ</a>
         </nav>
-        <a href="#order" className="btn btn-primary text-sm">Đặt hàng</a>
+        <a href="#order" className="btn btn-primary text-base md:text-2xl font-semibold font-sans">Đặt hàng</a>
       </div>
     </header>
   );

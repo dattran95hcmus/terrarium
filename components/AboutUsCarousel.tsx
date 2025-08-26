@@ -3,18 +3,18 @@ import React, { useEffect, useRef, useState } from "react";
 
 const members = [
   {
-    name: "Nguyễn Văn A",
-    image: "/forest-dome.jpg",
+    name: "Kat",
+    image: "/kat.png",
     desc: "Founder & Designer. Đam mê thiên nhiên và sáng tạo không gian xanh."
   },
   {
-    name: "Trần Thị B",
-    image: "/zen-mini.jpeg",
+    name: "Kat",
+    image: "/kat.png",
     desc: "Chuyên gia chăm sóc cây. Luôn tận tâm với từng sản phẩm."
   },
   {
-    name: "Lê Văn C",
-    image: "/ocean-cliff.jpeg",
+    name: "Kat",
+    image: "/kat.png",
     desc: "Marketing & CSKH. Mang sản phẩm đến gần hơn với khách hàng."
   }
 ];

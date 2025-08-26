@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import { models } from "@/data/models";
 import AboutUsCarousel from "@/components/AboutUsCarousel";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
@@ -6,14 +7,6 @@ import FAQ from "@/components/FAQ";
 import LeadForm from "@/components/LeadForm";
 
 export default function Page() {
-  const models = [
-    { name: "Forest Dome", price: "549k", desc: "Vòm thuỷ tinh tái tạo rừng mưa thu nhỏ.", image: "/forest-dome.jpg", tag: "Bán chạy" },
-    { name: "Zen Mini", price: "329k", desc: "Kích thước mini, phù hợp bàn làm việc.", image: "/zen-mini.jpeg", tag: "Mới" },
-    { name: "Desert Globe", price: "489k", desc: "Tiểu cảnh xương rồng phong cách sa mạc.", image: "/desert-globe.jpg" },
-    { name: "Moss Valley", price: "399k", desc: "Thung lũng rêu xanh giữ ẩm tốt.", image: "/moss-valley.jpg" },
-    { name: "Rainforest Pill", price: "569k", desc: "Ống thuỷ tinh đứng với cây nhiệt đới.", image: "/rainforest-pill.jpeg" },
-    { name: "Ocean Cliff", price: "599k", desc: "Bờ đá đại dương với sỏi xanh lam.", image: "/ocean-cliff.jpeg" },
-  ];
 
   const benefits = [
     { title: "Ít chăm sóc", desc: "Tự cân bằng độ ẩm, chỉ cần tưới 2–4 tuần/lần." },
@@ -57,7 +50,7 @@ export default function Page() {
       </section>
 
       {/* MODELS */}
-      <section id="models" className="container-beauty py-16">
+  <section id="models" className="container-beauty py-16 scroll-mt-32">
         <div className="flex items-end justify-between mb-6">
           <h2 className="text-2xl font-semibold">Các mẫu nổi bật</h2>
           <a href="#order" className="text-leaf-700 font-medium hover:underline">Đặt mẫu theo ý thích →</a>
@@ -70,7 +63,7 @@ export default function Page() {
       </section>
 
       {/* BENEFITS */}
-      <section id="benefits" className="container-beauty py-4">
+  <section id="benefits" className="container-beauty py-4 scroll-mt-32">
         <div className="grid md:grid-cols-4 gap-4">
           {benefits.map((b) => (
             <div key={b.title} className="card p-6">
@@ -82,7 +75,7 @@ export default function Page() {
       </section>
 
       {/* ABOUT US */}
-      <section id="about-us" className="container-beauty py-12">
+  <section id="about-us" className="container-beauty py-12 scroll-mt-32">
         {/* Responsive wrapper, center content, giảm margin dưới tối đa cho cả mobile */}
         <div className="mx-auto max-w-2xl mb-2 sm:mb-4">
           <AboutUsCarousel />
@@ -90,7 +83,7 @@ export default function Page() {
       </section>
 
       {/* REVIEWS */}
-      <section id="reviews" className="container-beauty py-16">
+  <section id="reviews" className="container-beauty py-16 scroll-mt-32">
         <h2 className="text-2xl font-semibold mb-6">Khách hàng nói gì?</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {reviews.map((r, i) => (
@@ -103,18 +96,27 @@ export default function Page() {
       </section>
 
       {/* ORDER */}
-      <section id="order" className="container-beauty py-16">
+  <section id="order" className="container-beauty py-16 scroll-mt-32">
         <h2 className="text-2xl font-semibold text-center mb-8">Liên hệ và đặt hàng</h2>
         <div className="flex items-center justify-center gap-6">
-          <button className="rounded-full bg-blue-600 hover:bg-blue-700 w-12 h-12 flex items-center justify-center shadow-md transition object-contain">
+          <a 
+          href="https://www.facebook.com/profile.php?id=61578016246629&mibextid=wwXIfr&mibextid=wwXIfr"
+          target="_blank" rel="noopener noreferrer"
+          className="rounded-full bg-blue-600 hover:bg-blue-700 w-12 h-12 flex items-center justify-center shadow-md transition object-contain">
             <img src="facebook.png" alt="Facebook" className="w-12 h-12" />
-          </button>
-          <button className="rounded-full bg-cyan-500 hover:bg-cyan-600 w-12 h-12 flex items-center justify-center shadow-md transition">
+          </a>
+          <a
+          href="https://zalo.me/0865145017"
+          target="_blank" rel="noopener noreferrer"
+           className="rounded-full bg-cyan-500 hover:bg-cyan-600 w-12 h-12 flex items-center justify-center shadow-md transition">
             <img src="zalo.webp" alt="Zalo" className="w-12 h-12" />
-          </button>
-          <button className="rounded-full bg-black hover:bg-gray-800 w-12 h-12 flex items-center justify-center shadow-md transition">
+          </a>
+          <a 
+          href="https://www.tiktok.com/@kattarrot1?_t=ZS-8zCGjjAZPpi&_r=1"
+          target="_blank" rel="noopener noreferrer"
+          className="rounded-full bg-black hover:bg-gray-800 w-12 h-12 flex items-center justify-center shadow-md transition">
             <img src="tiktok.png" alt="Tiktok" className="w-12 h-12" />
-          </button>
+          </a>
         </div>
       </section>
 
