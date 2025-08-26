@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import AboutUsCarousel from "@/components/AboutUsCarousel";
 import Footer from "@/components/Footer";
 import ProductCard from "@/components/ProductCard";
 import FAQ from "@/components/FAQ";
@@ -80,6 +81,14 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ABOUT US */}
+      <section id="about-us" className="container-beauty py-12">
+        {/* Responsive wrapper, center content, giảm margin dưới tối đa cho cả mobile */}
+        <div className="mx-auto max-w-2xl mb-2 sm:mb-4">
+          <AboutUsCarousel />
+        </div>
+      </section>
+
       {/* REVIEWS */}
       <section id="reviews" className="container-beauty py-16">
         <h2 className="text-2xl font-semibold mb-6">Khách hàng nói gì?</h2>
@@ -95,19 +104,17 @@ export default function Page() {
 
       {/* ORDER */}
       <section id="order" className="container-beauty py-16">
-        <div className="grid md:grid-cols-2 gap-8 items-start">
-          <div>
-            <h2 className="text-2xl font-semibold">Đặt hàng nhanh</h2>
-            <p className="text-gray-600 mt-2">
-              Điền thông tin để nhận tư vấn & xác nhận đơn trong 15 phút làm việc.
-            </p>
-            <ul className="mt-4 text-sm text-gray-700 space-y-2 list-disc pl-5">
-              <li>Miễn phí thiệp tặng</li>
-              <li>Đóng gói chống sốc</li>
-              <li>Hỗ trợ chăm sóc trọn đời</li>
-            </ul>
-          </div>
-          <LeadForm />
+        <h2 className="text-2xl font-semibold text-center mb-8">Liên hệ và đặt hàng</h2>
+        <div className="flex items-center justify-center gap-6">
+          <button className="rounded-full bg-blue-600 hover:bg-blue-700 w-12 h-12 flex items-center justify-center shadow-md transition object-contain">
+            <img src="facebook.png" alt="Facebook" className="w-12 h-12" />
+          </button>
+          <button className="rounded-full bg-cyan-500 hover:bg-cyan-600 w-12 h-12 flex items-center justify-center shadow-md transition">
+            <img src="zalo.webp" alt="Zalo" className="w-12 h-12" />
+          </button>
+          <button className="rounded-full bg-black hover:bg-gray-800 w-12 h-12 flex items-center justify-center shadow-md transition">
+            <img src="tiktok.png" alt="Tiktok" className="w-12 h-12" />
+          </button>
         </div>
       </section>
 
