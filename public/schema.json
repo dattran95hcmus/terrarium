@@ -1,0 +1,8 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "3Bros-Terra Terrarium",
+  "url": "https://3brosterra.vercel.app/",
+  "description": "Terrarium nghệ thuật, quà tặng xanh, trang trí sang trọng, dễ chăm sóc. Đặt hàng và nhận tư vấn ngay tại 3Bros-Terra.",
+  "image": "https://3brosterra.vercel.app/hero-image.jpeg"
+}
